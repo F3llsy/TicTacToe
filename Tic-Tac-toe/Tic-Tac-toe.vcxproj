@@ -24,6 +24,7 @@
     <ProjectGuid>{d2b530e3-c51c-4da6-9c80-e953b2e48ccc}</ProjectGuid>
     <RootNamespace>TicTactoe</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>TicTacToe</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -135,7 +136,7 @@
     <ClInclude Include="checkWin.h" />
     <ClInclude Include="drawField.h" />
     <ClInclude Include="header.h" />
-    <ClInclude Include="help.h" />
+    <ClInclude Include="controls.h" />
     <ClInclude Include="keyInput.h" />
     <ClInclude Include="menu.h" />
     <ClInclude Include="multiplayer.h" />

@@ -1,5 +1,5 @@
 #include "header.h"
-#include "help.h"
+#include "controls.h"
 #include "resetField.h"
 #include "menu.h"
 #include "drawField.h"

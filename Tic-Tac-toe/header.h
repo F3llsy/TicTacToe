@@ -8,7 +8,7 @@ char field[10];
 
 void singleplayer();
 void multiplayer();
-void help();
+void controls();
 bool checkFull();
 bool checkWin(char);
 char keyInput(bool x);

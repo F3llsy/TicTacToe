@@ -9,10 +9,10 @@ void menu()
 		cout << "\n\n|---------------|\n";
 		cout << "|     MENU      |\n";
 		cout << "|---------------|\n";
-		cout << "|1: Singleplayer|\n";
-		cout << "|2: Multiplayer |\n";
-		cout << "|3: Help        |\n";
-		cout << "|4: Quit        |\n";
+		cout << "|1) Singleplayer|\n";
+		cout << "|2) Multiplayer |\n";
+		cout << "|3) Controls    |\n";
+		cout << "|4) Exit        |\n";
 		cout << "|---------------|\n\n";
 		cout << "Input: ";
 		cin >> inputmenu;
@@ -27,7 +27,7 @@ void menu()
 		}
 		else if (inputmenu == '3')
 		{
-			help();
+			controls();
 		}
 		else if (inputmenu == '4')
 		{
