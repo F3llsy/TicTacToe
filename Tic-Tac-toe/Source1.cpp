@@ -10,8 +10,9 @@
 #include "checkFull.h"
 #include "AI.h"
 
+
 int main() {
-	
+	cll();
 	menu();
 
 	return 0;

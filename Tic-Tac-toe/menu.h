@@ -4,7 +4,7 @@ void menu()
 {
 	while (true)
 	{
-		resetField();
+
 		char inputmenu;
 		cout << "\n\n|---------------|\n";
 		cout << "|     MENU      |\n";

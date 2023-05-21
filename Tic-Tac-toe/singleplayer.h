@@ -28,11 +28,13 @@ void singleplayer()
 		if (checkWin('O'))
 		{
 			cout << "\nComputer has won!\n\n";
+			resetField();
 			return;
 		}
 		if (checkFull())
 		{
 			cout << "\nTie!\n\n";
+			resetField();
 			return;
 		}
 		input = keyInput(true);
@@ -44,6 +46,7 @@ void singleplayer()
 		if (checkWin('X'))
 		{
 			cout << "\nYou won!\n\n";
+			resetField();
 			return;
 		}
 		AI(difficulty);

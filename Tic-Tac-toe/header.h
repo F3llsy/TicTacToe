@@ -1,10 +1,23 @@
 #include <iostream>
 #include <stdlib.h>
 #include <time.h>
+#include <string>
+#include <fstream>
 #pragma once
 using namespace std;
 
-char field[10];
+string field;
+ofstream op;
+ifstream cl;
+void cll() {
+	cl.open("field.txt");
+	while (!cl.eof()) {
+		cl >> field;
+	}
+	cl.close();
+	return;
+}
+
 
 void singleplayer();
 void multiplayer();

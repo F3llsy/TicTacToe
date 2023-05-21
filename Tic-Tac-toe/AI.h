@@ -15,7 +15,7 @@ void AI(int difficulty)
 		{
 			for (int i = 1; i < 10; i++)
 			{
-				if (field[i] == ' ')
+				if (field[i] == '.')
 				{
 					field[i] = 'O';
 					if (checkWin('O'))
@@ -24,7 +24,7 @@ void AI(int difficulty)
 					}
 					else
 					{
-						field[i] = ' ';
+						field[i] = '.';
 					}
 				}
 			}
@@ -33,7 +33,7 @@ void AI(int difficulty)
 		{
 			for (int i = 1; i < 10; i++)
 			{
-				if (field[i] == ' ')
+				if (field[i] == '.')
 				{
 					field[i] = 'X';
 					if (checkWin('X'))
@@ -43,7 +43,7 @@ void AI(int difficulty)
 					}
 					else
 					{
-						field[i] = ' ';
+						field[i] = '.';
 					}
 				}
 			}
@@ -51,7 +51,7 @@ void AI(int difficulty)
 		while (true)
 		{
 			int i = rand() % 9 + 1;
-			if (field[i] == ' ')
+			if (field[i] == '.')
 			{
 				field[i] = 'O';
 				return;
@@ -65,7 +65,7 @@ void AI(int difficulty)
 		{
 			for (int i = 1; i < 10; i++)
 			{
-				if (field[i] == ' ')
+				if (field[i] == '.')
 				{
 					field[i] = 'O';
 					if (checkWin('O'))
@@ -74,7 +74,7 @@ void AI(int difficulty)
 					}
 					else
 					{
-						field[i] = ' ';
+						field[i] = '.';
 					}
 				}
 			}
@@ -83,7 +83,7 @@ void AI(int difficulty)
 		{
 			for (int i = 1; i < 10; i++)
 			{
-				if (field[i] == ' ')
+				if (field[i] == '.')
 				{
 					field[i] = 'X';
 					if (checkWin('X'))
@@ -93,7 +93,7 @@ void AI(int difficulty)
 					}
 					else
 					{
-						field[i] = ' ';
+						field[i] = '.';
 					}
 				}
 			}
@@ -101,7 +101,7 @@ void AI(int difficulty)
 		while (true)
 		{
 			int i = rand() % 9 + 1;
-			if (field[i] == ' ')
+			if (field[i] == '.')
 			{
 				field[i] = 'O';
 				return;
@@ -113,7 +113,7 @@ void AI(int difficulty)
 		//Check if AI can win
 		for (int i = 1; i < 10; i++)
 		{
-			if (field[i] == ' ')
+			if (field[i] == '.')
 			{
 				field[i] = 'O';
 				if (checkWin('O'))
@@ -122,7 +122,7 @@ void AI(int difficulty)
 				}
 				else
 				{
-					field[i] = ' ';
+					field[i] = '.';
 				}
 			}
 		}
@@ -130,7 +130,7 @@ void AI(int difficulty)
 		//Check if Player can win and stop it 
 		for (int i = 1; i < 10; i++)
 		{
-			if (field[i] == ' ')
+			if (field[i] == '.')
 			{
 				field[i] = 'X';
 				if (checkWin('X'))
@@ -140,14 +140,14 @@ void AI(int difficulty)
 				}
 				else
 				{
-					field[i] = ' ';
+					field[i] = '.';
 				}
 			}
 		}
 
 		//Set to field in the middle with a chance when it is still empty
 		int middle = rand() % 4;
-		if (field[5] == ' ' && middle != 1)
+		if (field[5] == '.' && middle != 1)
 		{
 			field[5] = 'O';
 			return;
@@ -157,7 +157,7 @@ void AI(int difficulty)
 		while (true)
 		{
 			int i = rand() % 9 + 1;
-			if (field[i] == ' ')
+			if (field[i] == '.')
 			{
 				field[i] = 'O';
 				return;

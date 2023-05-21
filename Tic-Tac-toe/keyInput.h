@@ -19,7 +19,7 @@ char keyInput(bool x)
 				cout << "\nInvalid Input!";
 			}
 		}
-		else if (field[inputNumber] != ' ') // Checks for empty space
+		else if (field[inputNumber] != '.') // Checks for empty space
 		{
 			cout << "\nThis field is already used!";
 		}
@@ -28,10 +28,16 @@ char keyInput(bool x)
 			if (x) 
 			{
 				field[inputNumber] = 'X';
+				op.open("field.txt");
+				op << field;
+				op.close();
 			}
 			else
 			{
 				field[inputNumber] = 'O';
+				op.open("field.txt");
+				op << field;
+				op.close();
 			}
 			return input;
 		}
